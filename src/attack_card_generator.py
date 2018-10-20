@@ -2,9 +2,9 @@ import random
 from enum import Enum
 
 class AttackProperty(Enum):
-    damage = 1
-    bullets = 2
-    accuracy_penalty = 3
+    DAMAGE = 1
+    BULLETS = 2
+    ACCURACY_PENALTY = 3
 
 
 damage_range_min = 0
@@ -36,9 +36,11 @@ def getAttackCardsStack(n):
 
 
 def generateAttackCard():
-
     damage = random.randint(damage_range_min, damage_range_max)
+    bullets = random.randint(bullets_range_min, bullets_range_max)
+    accuracy_penalty = random.randint(accuracy_penalty_range_min, accuracy_penalty_range_max, accuracy_penalty_range_step)
+    rand = random.choice(damage, bullets, accuracy_penalty)
     print(damage)
-
+    random.choice(list(AttackProperty))
 
 getAttackCardsStack(10)
