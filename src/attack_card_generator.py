@@ -1,11 +1,12 @@
-
-
 import random
 
-
-damage_range = range(0, 25)
-bullets_range = range(0, 6)
-accuracy_penalty_range = range(0, 90, 10)
+damage_range_min = 0
+damage_range_max = 25
+bullets_range_min = 0
+bullets_range_max = 6
+accuracy_penalty_range_min = 0
+accuracy_penalty_range_max = 90
+accuracy_penalty_range_step = 10
 
 
 class AttackCard:
@@ -28,7 +29,7 @@ def getAttackCardsStack(n):
 
 
 def generateAttackCard():
-    damage = random.randint(damage_range.start, damage_range.stop)
+    damage = random.randint(damage_range_min, damage_range_max)
     print(damage)
 
 getAttackCardsStack(10)
