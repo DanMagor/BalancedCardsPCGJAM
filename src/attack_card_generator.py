@@ -1,6 +1,6 @@
 import random
 
-dictionary = {'DAMAGE': 1, 'BULLETS': 2, 'ACCURACY_PENALTY': 3}
+parameters = {'DAMAGE', 'BULLETS', 'ACCURACY_PENALTY'}
 
 damage_range_min = 0
 damage_range_max = 25
@@ -9,7 +9,7 @@ bullets_range_max = 6
 accuracy_penalty_range_min = 0
 accuracy_penalty_range_max = 90
 accuracy_penalty_range_step = 10
-
+card_cost = 0
 
 class AttackCard:
     damage = 0
@@ -36,14 +36,14 @@ def normalization():
               (bullets_range_max - bullets_range_min)
     accuracy_penalty = (random.randint(accuracy_penalty_range_min, accuracy_penalty_range_max, accuracy_penalty_range_step)
                         - accuracy_penalty_range_min) / (accuracy_penalty_range_max - accuracy_penalty_range_min)
-    function = 0
+
 
 def generateAttackCard():
-    while (dictionary):
-        rand = random.choice(dictionary)
-        coefficient = 10 - function / 5.55
+    card_cost = 5 * random.choice(list(parameters))
+    while (len(parameters)== 0):
+        rand = random.choice(list(parameters))
+        coefficient = 10 - card_cost / 5.55
         dict.pop(rand)
-        function += coefficient * rand
-
+        card_cost += coefficient * rand
 
 getAttackCardsStack(10)
