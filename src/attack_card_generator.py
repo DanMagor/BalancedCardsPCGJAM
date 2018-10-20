@@ -29,14 +29,19 @@ def getAttackCardsStack(n):
     for i in range(0, n):
         generateAttackCard()
 
+def normalization():
+    damage = (random.randint(damage_range_min, damage_range_max)  - damage_range_min) / \
+             (damage_range_max - damage_range_min)
+    bullets = (random.randint(bullets_range_min, bullets_range_max) - bullets_range_min) / \
+              (bullets_range_max - bullets_range_min)
+    accuracy_penalty = (random.randint(accuracy_penalty_range_min, accuracy_penalty_range_max, accuracy_penalty_range_step)
+                        - accuracy_penalty_range_min) / (accuracy_penalty_range_max - accuracy_penalty_range_min)
+    function = 0
 
 def generateAttackCard():
-    damage = random.randint(damage_range_min, damage_range_max)
-    bullets = random.randint(bullets_range_min, bullets_range_max)
-    accuracy_penalty = random.randint(accuracy_penalty_range_min, accuracy_penalty_range_max, accuracy_penalty_range_step)
     while (dictionary):
         rand = random.choice(dictionary)
-        coefficient = 1
+        coefficient = 10 - function / 5.55
         dict.pop(rand)
         function += coefficient * rand
 
