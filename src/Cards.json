@@ -1,1 +1,185 @@
-{"Cards": {"Card1": {"Damage": "10", "Bullets": "4", "Accuracy_Penalty": "60.0"}, "Card2": {"Damage": "8", "Bullets": "5", "Accuracy_Penalty": "80.0"}, "Card3": {"Damage": "8", "Bullets": "3", "Accuracy_Penalty": "30.0"}, "Card4": {"Damage": "6", "Bullets": "5", "Accuracy_Penalty": "60.0"}, "Card5": {"Damage": "4", "Bullets": "6", "Accuracy_Penalty": "50.0"}, "Card6": {"Damage": "4", "Bullets": "4", "Accuracy_Penalty": "50.0"}, "Card7": {"Damage": "6", "Bullets": "5", "Accuracy_Penalty": "70.0"}, "Card8": {"Damage": "7", "Bullets": "3", "Accuracy_Penalty": "50.0"}, "Card9": {"Damage": "8", "Bullets": "3", "Accuracy_Penalty": "60.0"}, "Card10": {"Damage": "9", "Bullets": "2", "Accuracy_Penalty": "20.0"}, "Card11": {"Damage": "7", "Bullets": "2", "Accuracy_Penalty": "40.0"}, "Card12": {"Damage": "10", "Bullets": "5", "Accuracy_Penalty": "70.0"}, "Card13": {"Damage": "11", "Bullets": "1", "Accuracy_Penalty": "20.0"}, "Card14": {"Damage": "13", "Bullets": "2", "Accuracy_Penalty": "50.0"}, "Card15": {"Damage": "4", "Bullets": "5", "Accuracy_Penalty": "60.0"}, "Card16": {"Damage": "11", "Bullets": "2", "Accuracy_Penalty": "30.0"}, "Card17": {"Damage": "4", "Bullets": "4", "Accuracy_Penalty": "50.0"}, "Card18": {"Damage": "4", "Bullets": "6", "Accuracy_Penalty": "60.0"}, "Card19": {"Damage": "9", "Bullets": "4", "Accuracy_Penalty": "70.0"}, "Card20": {"Damage": "5", "Bullets": "5", "Accuracy_Penalty": "50.0"}, "None": "None"}}
+{
+  "Cards": {
+    "Card1": {
+      "Damage": "11",
+      "Bullets": "2",
+      "Accuracy_Penalty": "60.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BAN",
+        "VALUE": 0
+      }
+    },
+    "Card2": {
+      "Damage": "5",
+      "Bullets": "6",
+      "Accuracy_Penalty": "70.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 10.0
+      }
+    },
+    "Card3": {
+      "Damage": "12",
+      "Bullets": "4",
+      "Accuracy_Penalty": "60.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 30.0
+      }
+    },
+    "Card4": {
+      "Damage": "8",
+      "Bullets": "4",
+      "Accuracy_Penalty": "70.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 10.0
+      }
+    },
+    "Card5": {
+      "Damage": "5",
+      "Bullets": "4",
+      "Accuracy_Penalty": "60.0",
+      "Initiative Effect": {
+        "NAME": "ADD_BULLET",
+        "VALUE": 0
+      }
+    },
+    "Card6": {
+      "Damage": "7",
+      "Bullets": "3",
+      "Accuracy_Penalty": "60.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 10.0
+      }
+    },
+    "Card7": {
+      "Damage": "6",
+      "Bullets": "5",
+      "Accuracy_Penalty": "70.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 20.0
+      }
+    },
+    "Card8": {
+      "Damage": "9",
+      "Bullets": "5",
+      "Accuracy_Penalty": "80.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 20.0
+      }
+    },
+    "Card9": {
+      "Damage": "15",
+      "Bullets": "3",
+      "Accuracy_Penalty": "80.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 10.0
+      }
+    },
+    "Card10": {
+      "Damage": "9",
+      "Bullets": "3",
+      "Accuracy_Penalty": "60.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 20.0
+      }
+    },
+    "Card11": {
+      "Damage": "5",
+      "Bullets": "4",
+      "Accuracy_Penalty": "60.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 20.0
+      }
+    },
+    "Card12": {
+      "Damage": "8",
+      "Bullets": "4",
+      "Accuracy_Penalty": "50.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BAN",
+        "VALUE": 0
+      }
+    },
+    "Card13": {
+      "Damage": "10",
+      "Bullets": "2",
+      "Accuracy_Penalty": "30.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 30.0
+      }
+    },
+    "Card14": {
+      "Damage": "6",
+      "Bullets": "6",
+      "Accuracy_Penalty": "70.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 20.0
+      }
+    },
+    "Card15": {
+      "Damage": "4",
+      "Bullets": "6",
+      "Accuracy_Penalty": "50.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 10.0
+      }
+    },
+    "Card16": {
+      "Damage": "5",
+      "Bullets": "5",
+      "Accuracy_Penalty": "60.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 30.0
+      }
+    },
+    "Card17": {
+      "Damage": "5",
+      "Bullets": "4",
+      "Accuracy_Penalty": "50.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 20.0
+      }
+    },
+    "Card18": {
+      "Damage": "5",
+      "Bullets": "3",
+      "Accuracy_Penalty": "30.0",
+      "Initiative Effect": {
+        "NAME": "ACCURACY_BONUS",
+        "VALUE": 10.0
+      }
+    },
+    "Card19": {
+      "Damage": "9",
+      "Bullets": "3",
+      "Accuracy_Penalty": "50.0",
+      "Initiative Effect": {
+        "NAME": "DODGE_BONUS",
+        "VALUE": 20.0
+      }
+    },
+    "Card20": {
+      "Damage": "10",
+      "Bullets": "2",
+      "Accuracy_Penalty": "40.0",
+      "Initiative Effect": {
+        "NAME": "ADD_BULLET",
+        "VALUE": 0
+      }
+    },
+    "None": "None"
+  }
+}

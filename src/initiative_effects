@@ -1,0 +1,32 @@
+[
+  {
+    "ACCURACY_BONUS": {
+      "name": "ACCURACY_BONUS",
+      "hasValue": true,
+      "minValue": 10,
+      "maxValue": 30
+    }
+  },
+  {
+    "DODGE_BAN": {
+      "name": "DODGE_BAN",
+      "hasValue": false
+    }
+  },
+  {
+    "ADD_BULLET": {
+      "name": "ADD_BULLET",
+      "hasValue": false
+    }
+  },
+  {
+    "DODGE_BONUS": {
+      "name": "DODGE_BONUS",
+      "hasValue": true,
+      "minValue": 10,
+      "maxValue": 50
+    }
+  }
+
+]
+
