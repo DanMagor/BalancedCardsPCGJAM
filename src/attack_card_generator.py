@@ -1,6 +1,6 @@
 import random
 
-parameters = {'DAMAGE': 0, 'BULLETS': 0, 'ACCURACY_PENALTY': 0, "INITIATIVE": ""}
+parameters = {'DAMAGE': 0, 'BULLETS': 0, 'ACCURACY_PENALTY': 0}
 
 damage_range_min = 0
 damage_range_max = 15
