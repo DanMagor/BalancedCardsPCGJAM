@@ -12,7 +12,7 @@ accuracy_penalty_range_step = 10
 max_card_cost = 3
 card_cost = 0
 
-minimal_damage = 8
+minimal_expected_damage = 8
 
 
 class AttackCard:
@@ -33,7 +33,7 @@ def getAttackCardsStack(n):
     attack_cards_stack = []
     for i in range(0, n):
         card = generateAttackCard()
-        while calculateCardFitness(card) < minimal_damage:
+        while calculateCardFitness(card) < minimal_expected_damage:
             card = generateAttackCard()
         attack_cards_stack.append(card)
     return attack_cards_stack
@@ -41,7 +41,7 @@ def getAttackCardsStack(n):
 
 def calculateCardFitness(card):
     #TODO: Add2 patameters
-    fitness = card.bullets*(card.damage*(100-card.accuracy_penalty)/100)
+    fitness = card.bullets * (card.damage * (100 - card.accuracy_penalty) / 100)
     return fitness
 
 def generateAttackCard():

@@ -10,6 +10,9 @@ accuracy_range_step = 10
 max_card_cost = 2
 card_cost = 0
 
+minimal_expected_dodge = 1
+maximal_expected_dodge = 4
+
 class DodgeCard:
     steps = 0
     accuracy = 0
@@ -26,9 +29,15 @@ def getDodgeCardsStack(n):
     dodge_cards_stack = []
     for i in range(0, n):
         card = generateDodgeCard()
+        while calculateCardFitness(card) < minimal_expected_dodge or calculateCardFitness(card) > maximal_expected_dodge:
+            card = generateDodgeCard()
         dodge_cards_stack.append(card)
     return dodge_cards_stack
 
+def calculateCardFitness(card):
+    #TODO: Add2 patameters
+    fitness = card.steps * ((100 - card.accuracy) / 100)
+    return fitness
 
 def generateDodgeCard():
     steps = (random.randint(steps_range_min, steps_range_max) - steps_range_min) / \
