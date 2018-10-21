@@ -1,6 +1,6 @@
 import random
 
-parameters = {'DAMAGE': 0, 'BULLETS': 0, 'ACCURACY_PENALTY': 0}
+parameters = {'DAMAGE': 0, 'BULLETS': 0, 'ACCURACY_PENALTY': 0, "INITIATIVE": ""}
 
 damage_range_min = 0
 damage_range_max = 15
@@ -9,6 +9,7 @@ bullets_range_max = 6
 accuracy_penalty_range_min = 0
 accuracy_penalty_range_max = 90
 accuracy_penalty_range_step = 10
+max_card_cost = 3
 card_cost = 0
 
 minimal_damage = 8
@@ -61,14 +62,14 @@ def generateAttackCard():
 
     parameters_copy = parameters.copy()
     rand_parameter = random.choice(list(parameters_copy.keys()))
-    k1 = 1 * parameters_copy[rand_parameter]
+    k1 = parameters_copy[rand_parameter]
     card_cost = k1
     parameters[rand_parameter] = k1
     parameters_copy.pop(rand_parameter)
 
     while parameters_copy:
         rand_parameter = random.choice(list(parameters_copy.keys()))
-        c = 1 - card_cost / 3
+        c = 1 - card_cost / max_card_cost
         k = c * parameters_copy[rand_parameter]
         card_cost += k
         parameters[rand_parameter] = k
